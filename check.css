@@ -1,0 +1,65 @@
+.radiotype{
+    opacity:0;
+}
+.radiolabel{
+    display:inline-block;
+    border:2px solid firebrick;
+    background:url(20119211129395.png);
+    height:100px;
+    width:100px;
+    border-radius:5px;
+    position:relative;
+}
+.radiotype:checked+.radiolabel:after{
+    content:"\2714";
+    font-size: 12px;
+    width:100px;
+    height:20px;
+    background:firebrick;
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    text-align:left;
+}
+.radiotype:checked+.radiolabel{
+    border:2px solid firebrick;
+}
+.radiotype:hover+.radiolabel{
+    opacity:0.3;
+    position:relative;
+}
+.checktype{
+    opacity:0;
+}
+.checklabel{
+    display:inline-block;
+    border:2px solid purple;
+    background:url(20119211129395.png);
+    background-position: -200px 9px;
+    height:100px;
+    width:100px;
+    border-radius:100px;
+    position:relative;
+}
+.checktype:checked+.checklabel:after{
+    content: " ";
+    font-size: 12px;
+    width: 20px;
+    height: 0px;
+    background: dodgerblue;
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+    text-align: left;
+    border-radius: 0 0 48px 44px;
+    border-left: 33px solid transparent;
+    border-right: 37px solid transparent;
+    border-top: 31px solid dodgerblue;
+}
+.checktype:checked+.checklabel{
+    border:2px solid dodgerblue;
+}
+.checktype:hover+.checklabel{
+    opacity:0.3;
+    position:relative;
+}
