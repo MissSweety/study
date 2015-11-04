@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>title</title>
+    <style>
+        .frame{outline: 2px solid red;outline-offset:-2px}
+        .ancestor{background:cornflowerblue;width:100%;height:500px;padding:20px}
+        .parent{background: lightseagreen;padding:20px;width:90%}
+        .child{background: lightcoral;padding:20px;width:90%;}
+        .parentc{background:lightsalmon;padding:20px;width:90%;}
+        .ancestor div{color:white;font-weight:bold;}
+        .parent>div{color:blue;}
+        .active+ div{color:orange}
+        a.btn{text-decoration: none;color:white}
+        .btn{display:inline-block;height:50px;line-height:50px;background-color:#0074cc;background-image:-webkit-linear-gradient(top, #0088cc, #0055cc);}
+
+        .btn:hover{background:#0055cc;background-position: 0 -15px;-webkit-transition:background-position 0.1s linear;}
+        .btn:active{background:black;}
+    </style>
+</head>
+<body>
+<input class="frame" type="text" value="hello"/>
+<div class="ancestor">i am ancestor
+    <div class="parent active">I am parent
+        <div class="child">i am child
+            <div class="parentc">grandson</div>
+        </div>
+    </div>
+    <div class="parent">another parent;</div>
+    <div class="parent">the other parent;</div>
+
+</div>
+<br>
+<br>
+<a href="#" class="btn">click on me!</a>
+</body>
+</html>

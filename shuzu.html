@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    function test(arr){
+        var testarr = arr.split(' ');
+        var result = {};
+        if(testarr.length>10000){
+            console.log("too many char");
+            return ;
+        }
+        var resultv=[];
+        for(var i =0;i<testarr.length;i++){
+            if(!result[testarr[i]]){
+                result[testarr[i]]=1;
+            }
+            else{
+                var value = +result[testarr[i]];
+                result[testarr[i]]=value+1;
+            }
+        }
+        for (var key in result){
+            resultv.push(result[key]);
+        }
+        resultv.sort();
+        for(var i =0;i<resultv.length;i++){
+            console.log(resultv[i]);
+        }
+
+    }
+    var te ="a bd a d";
+    test(te);
+
+</script>
+</body>
+</html>

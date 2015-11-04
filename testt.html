@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{padding:0;
+        margin:0}
+        #footer{
+            position:fixed;
+            bottom:0;
+            background:#ddeeff;
+            width:100%;
+        }
+        #header{
+            background:red;
+            width:100%
+            height:50px;
+        }
+        #list{
+            background:green;
+            width:100%;
+            height:100%;
+
+        }
+        #toolbar{
+            background:blue;
+            width:100%;
+            height:50px;
+        }
+        #sidebar{
+            background:purple;
+            position:fixed;
+            left:0;
+            width:200px;
+            height:100%;
+        }
+        #container{
+            overflow-y:auto;
+            height:1000px;
+            width:100%;
+            float: left;
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+<div id="sidebar">sidebar
+
+</div>
+<div id="container">
+<div id="header">header
+
+</div>
+<div id="toolbar">toolbar
+
+
+</div>
+<div id="list">list
+
+</div>
+</div>
+<div id="footer">footer
+
+</div>
+<script>
+    var scrollFunc = function(){
+        var header = document.getElementById("header");
+        header.style.display='none';
+        var toolbar = document.getElementById("toolbar");
+        toolbar.style.position='fixed';
+        toolbar.style.top='0px';
+
+    }
+    window.onmousewheel=document.onmousewheel=scrollFunc;
+    if(document.addEventListener){
+        document.addEventListener('DOMMouseScroll',scrollFunc,false);
+    }else if(document.attachEvent){
+        document.attachEvent('onmousewheel',scrollFunc);
+    }
+
+
+
+</script>
+</body>
+</html>

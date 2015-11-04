@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        article {
+            position: fixed;
+            left: 1em;
+            top: 5em;
+        }
+        code{background:darkgray;border-radius:5px;}
+        code:before{content:'<';}
+        code:after{content:'>';}
+        section[id^="t"] {
+            padding:1em;
+            width: 25em;
+            height: 25em;
+            position: absolute;
+            background-color: lightskyblue;
+            background-size:25em 25em;
+            font-size: 1em;
+            opacity: 0;
+            transition: all 2s;
+            left:0em;
+        }
+        #t0 {
+            top: 0em;
+            background-position: 0em 0em;
+        }
+
+        #t1 {
+
+            top: 0em;
+            background-position: -25em 0em;
+        }
+
+        #t2 {
+
+            top: 0em;
+            background-position: -50em 0em;
+        }
+
+        #t0:target, #t1:target, #t2:target {
+            opacity: 1
+        }
+        #nav li{margin-top:.2em;color:#0055cc}
+        #nav li a {text-decoration: none;font-weight:bold;}
+        #nav li a:hover{background: lightyellow;}
+        var{color:#911}
+    </style>
+</head>
+<body>
+<ul id="nav">
+    <li><a href="#t0">tab1</a> </li>
+    <li><a href="#t1">tab2</a></li>
+    <li><a href="#t2">tab3</a></li>
+</ul>
+
+<article>
+
+    <section id="t0">
+        <h2>Welcome to the tab1</h2>
+        <p>It's all rounded corners, and an inset <var>box-shadow
+        </var> to create a three-dimensional effect. It perhaps is not as
+            good as a drawing - but it's quicker.</p>
+    </section>
+
+    <section id="t1">
+        <h2>Welcome to the tab2</h2>
+
+        <p>This is a basic study in green, in HTML5. I've decided to use
+            a collection of <code>section</code> elements housed within
+            an <code>article</code>, but I could have used a generic
+            container (<abbr title="id est" lang="la">i.e.</abbr> a
+            <code>div</code>). As long as the outer container (in this
+            case <code>article</code>) holds the background image and is
+            fixed, then you can get a scrollable background!</p>
+    </section>
+
+    <section id="t2">
+        <h2>Welcome to the tab3</h2>
+        <p>this page is used to achieve the effect of fade in and fade out only
+        by css3 .</p>
+    </section>
+</article>
+</body>
+</html>
