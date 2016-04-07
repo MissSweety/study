@@ -9,3 +9,5 @@ background:red;padding-right:20px;}
 [id="header"]{
 background:rgba(255,255,0,.5)}
 IE6中背景色为红色，高级浏览器中背景色为半透明黄色
+
+https://github.com/password_reset/00b003c5d54003024dbbeb1ab61fbb9a3ccfd742cafc5fb092ce570629bd82a5656d61696cb17a6378393030333038403136332e636f6da5666f726365c2
