@@ -10,5 +10,4 @@ background:red;padding-right:20px;}
 background:rgba(255,255,0,.5)}
 IE6中背景色为红色，高级浏览器中背景色为半透明黄色
 
-北京
-http://wiki.sankuai.com/pages/viewpage.action?pageId=458500258
+###所有商户急需解决的订单快捷入口
